@@ -33,21 +33,20 @@ def a(n):
 
     def b(n):
         sum = 0
-
         def c(n):
             sum = 0
             if not n % 2 == 0:
                 sum += 0
             return sum + c(n - 1)
-
         if n % 2 == 0:
             sum += n
         return sum + b(n - 1)
-
     if n == 0:
         return 0
 
+
         c(n)
+
 
     b(n)
     return n + a(n - 1)
